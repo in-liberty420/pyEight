@@ -41,6 +41,6 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
     ],
-    install_requires=["aiohttp"],
+    install_requires=["aiohttp>=3.11.0,<4.0"],
     python_requires=">=3.9",
 )

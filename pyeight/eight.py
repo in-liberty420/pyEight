@@ -168,7 +168,7 @@ class EightSleep:
 
         reg = await self.api_request("post", url, data=payload, include_token=False)
         self._configure_auth(reg["session"])
-        _LOGGER.debug("UserID: %s, Token: %s", self._user_id, self.token)
+        _LOGGER.debug("UserID: %s, Token: [REDACTED]", self._user_id)
         return reg["session"]
 
     async def fetch_device_list(self) -> None:
